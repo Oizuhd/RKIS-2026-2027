@@ -14,8 +14,8 @@ namespace TodoListApp
             Console.WriteLine("Ведите свой год рождения пожалуйста: ");
             var year = int.Parse(Console.ReadLine());
             Console.WriteLine($"Добавлен пользователь: {name} {surname} возраст: {2026-year}");
-            // Hello my friend
-            // Hello!
+            
+            string[] todos = new string[2];
         }
     }
 }

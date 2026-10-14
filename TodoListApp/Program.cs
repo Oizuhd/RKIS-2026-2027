@@ -20,6 +20,14 @@ namespace TodoListApp
             {
                 Console.WriteLine("Команды: add, view, help, exit");
                 string command = Console.ReadLine() "";
+                if (command == "help");
+                {    
+                    Console.WriteLine("profile - выводит данные пользователя");
+                    Console.WriteLine("add - добавляет новую задачу");
+                    Console.WriteLine("view -  выводит все задачи из массива");
+                    Console.WriteLine("exit - завершает цикл и останавливает выполнение программы");
+                }
+                
             }
         }
     }

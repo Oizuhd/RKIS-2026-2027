@@ -33,6 +33,10 @@ namespace TodoListApp
                     Console.WriteLine($"Фамилия: {surname}");
                     Console.WriteLine($"Год: {year}");
                 }
+                else if (command == "exit");
+                {
+                    break;
+                }
             }
         }
     }

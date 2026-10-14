@@ -18,11 +18,9 @@ namespace TodoListApp
             string[] todos = new string[2];
             while (true)
             {
-                
-
-
+                Console.WriteLine("Команды: add, view, help, exit");
+                string command = Console.ReadLine() "";
             }
-
         }
     }
 }

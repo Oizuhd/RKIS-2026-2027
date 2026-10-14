@@ -16,6 +16,13 @@ namespace TodoListApp
             Console.WriteLine($"Добавлен пользователь: {name} {surname} возраст: {2026-year}");
             
             string[] todos = new string[2];
+            while (true)
+            {
+                
+
+
+            }
+
         }
     }
 }

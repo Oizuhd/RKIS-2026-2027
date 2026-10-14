@@ -19,7 +19,7 @@ namespace TodoListApp
             while (true)
             {
                 Console.WriteLine("Команды: add, view, help, exit");
-                string command = Console.ReadLine() "";
+                string command = Console.ReadLine();
                 if (command == "help");
                 {    
                     Console.WriteLine("profile - выводит данные пользователя");
@@ -27,7 +27,12 @@ namespace TodoListApp
                     Console.WriteLine("view -  выводит все задачи из массива");
                     Console.WriteLine("exit - завершает цикл и останавливает выполнение программы");
                 }
-                
+                else if (command == "profile");
+                {
+                    Console.WriteLine($"Имя: {name}");
+                    Console.WriteLine($"Фамилия: {surname}");
+                    Console.WriteLine($"Год: {year}");
+                }
             }
         }
     }

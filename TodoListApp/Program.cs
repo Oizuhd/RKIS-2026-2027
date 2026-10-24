@@ -52,6 +52,13 @@ namespace TodoListApp
                     Console.WriteLine($"Фамилия: {surname}");
                     Console.WriteLine($"Год: {year}");
                 }
+                else if (command == "view")
+                {
+                    for (int i = 0; i < count; i++)
+                    {
+                        Console.WriteLine(todos[i]);
+                    }
+                }
                 else if (command == "exit")
                 {
                     break;

@@ -16,6 +16,7 @@ namespace TodoListApp
             Console.WriteLine($"Добавлен пользователь: {name} {surname} возраст: {2026-year}");
             
             string[] todos = new string[2];
+            int count = 0;
             while (true)
             {
                 Console.WriteLine("Команды: add, view, help, exit");
@@ -26,6 +27,15 @@ namespace TodoListApp
                     Console.WriteLine("add - добавляет новую задачу");
                     Console.WriteLine("view -  выводит все задачи из массива");
                     Console.WriteLine("exit - завершает цикл и останавливает выполнение программы");
+                }
+                else if (command == "add")
+                {
+                    Console.WriteLine("Введите задачу: ");
+                    string task = Console.ReadLine("");
+                    
+                    {
+                        
+                    }
                 }
                 else if (command == "profile")
                 {

@@ -28,14 +28,23 @@ namespace TodoListApp
                     Console.WriteLine("view -  выводит все задачи из массива");
                     Console.WriteLine("exit - завершает цикл и останавливает выполнение программы");
                 }
-                else if (command == "add")
+                else if (command.StartsWith("add "))
                 {
-                    Console.WriteLine("Введите задачу: ");
-                    string task = Console.ReadLine("");
-                    
+                    string[] parts = command.Split('"');
+                    string task = parts[1];
+
+                    if (count == todos.Length)
                     {
-                        
+                        string[] newTodos = new string[todos.Length * 2];
+                        for (int i = 0; i < count; i++)
+                        {
+                            newTodos[i] = todos[i];
+                        }
+                        todos = newTodos;
                     }
+                    todos[count] = task;
+                    count++;
+                    Console.WriteLine("Задача добавлена");
                 }
                 else if (command == "profile")
                 {
